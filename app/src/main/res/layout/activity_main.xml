@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="370dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="15dp"
+    app:cardBackgroundColor="@color/colorwebsitetab"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:id="@+id/carview"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cardrelativeview"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/shahbaz"
+            android:layout_alignParentRight="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Shahbaz Tauheed"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/mynametxt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Developer"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="italic"
+            android:layout_below="@+id/mynametxt"
+            android:id="@+id/proftxt"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
